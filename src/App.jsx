@@ -32,7 +32,7 @@ function App() {
   const addData = async () => {
     try {
   
-      await axios.post(`${API}/weatherData`, weatherData);
+      await axios.post(`${API}/api/weatherData`, weatherData);
       console.log("Data added successfully");
     } catch (error) {
       console.error("Error adding data:", error);
